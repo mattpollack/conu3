@@ -1,0 +1,18 @@
+{
+    "name": "poeurl",
+    "version": "2.0.0",
+    "description": "Poeurl is a url shortening service that only shortens Path of Exile community voted urls",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Matthew Pollack",
+    "license": "ISC",
+    "dependencies": {
+	"crypto": "0.0.3",
+	"express": "^4.15.3",
+	"http": "0.0.0",
+	"node": "0.0.0",
+	"socket.io": "^2.0.2"
+    }
+}

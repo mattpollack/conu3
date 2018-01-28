@@ -58,6 +58,17 @@ function handler(){
     loader("2018,10,10,18,31,9",301);
     loader("2018,10,10,19,31,9",201);
     loader("2018,10,10,20,31,9",401);	*/
+
+    
+    var test = new Date();
+    console.log([
+	test.getFullYear(),
+	test.getMonth(),
+	test.getDate(),
+	test.getHours(),
+	test.getMinutes(),
+	test.getSeconds(),
+    ].join(","));
 }
 
 

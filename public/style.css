@@ -4,8 +4,8 @@ body {
 }
 #chart_div {
     display: inline-block;
-    left: calc(50% - 400px);
-    top: calc(50% - 100px);
+    margin-left: calc(50% - 400px);
+    margin-top: calc(50% - 100px);
 }
 #home {
     float: right;

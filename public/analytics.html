@@ -11,7 +11,7 @@
 
       function drawChart() {
         var data = new google.visualization.DataTable();
-        var stats = Cookies.getJSON('stats') || [{'2018,0,27,15,5,5': 250},{'2018,0,28,5,5,5': 250},];//obtain cookies containing dates and words per minute via JSON
+      var stats = Cookies.getJSON('stats') || [{'2018,0,27,15,5,5': 250},{'2018,0,28,5,5,5': 250},];//obtain cookies containing dates and words per minute via JSON
         var array = [];
         data.addColumn('date', 'Date');
         data.addColumn('number','Words Minute');
@@ -40,12 +40,11 @@
       }
     </script>
   </head>
-  <body>
-      <div class="chart"> 
-
-        <div id="home">
-          <button onclick="location.href='index.html'">Home</button>
+  <body><div class="test">
+          <img src="images/ProReaderFavicon.png">
+          <img id="home" src="images/Prev.png"  onclick="location.href='index.html'">
         </div>
+      <div class="chart"> 
 	<div id="chart_container">
 	  <h1>Speed Increase</h1>
           <div id='chart_div'></div>

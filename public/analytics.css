@@ -22,6 +22,10 @@ body {
 #chart_container {
     display: inline-block;
     margin-left: calc(50% - 400px);
-    margin-top: 340px;
+    margin-top: 260px;
     text-align: center;
+}
+
+.test {
+    margin: 10px;
 }

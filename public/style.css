@@ -5,7 +5,7 @@ body {
 #chart_div {
     display: inline-block;
     margin-left: calc(50% - 400px);
-    margin-top: calc(50% - 100px);
+    margin-top: 140px;
 }
 #home {
     float: right;

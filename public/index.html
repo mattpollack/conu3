@@ -1,7 +1,54 @@
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type='text/javascript'>
+      google.charts.load('current', {'packages':['annotationchart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        var stats = Cookies.getJSON('stats');//obtain cookies containing dates and words per minute via JSON
+        var array = [];
+        data.addColumn('date', 'Date');
+        data.addColumn('number','Words Minute');
+
+        
+
+        for(var i=0; i<stats.length; i++){//loop through JSON Objs to format date and decimal(wmp)
+         var date = Object.keys(stats[i])[0];
+         var holder =date.split(',');
+         array.push([new Date(holder[0],holder[1],holder[2],holder[3],holder[4],holder[5]), stats[i][date]]);
+        }
+
+        data.addRows(array);
+
+        var chart = new google.visualization.AnnotationChart(document.getElementById('chart_div'));
+
+        var options = {
+          displayAnnotations: true,
+          displayRangeSelector:false,
+          width: 800,
+          colors: ['#003459', '00A8E8']
+        };
+
+        chart.draw(data, options);
+      }
+    </script>
   </head>
+
   <body>
-    <h1>Hi</h1>
+      <div class="chart"> 
+
+        <div id="home">
+          <button onclick="myFunction()">Home</button>
+        </div>
+        <div id='chart_div'></div>
+
+      <div id='chart_div'></div>
+      
   </body>
 </html>

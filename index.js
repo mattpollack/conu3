@@ -1,6 +1,7 @@
-/*
+/** 
+ * PROJECT OBO
  */
-(function(express, http, io, crypto) {
+((express, http, io, crypto) => {
     var routes = express();
     var server = http.createServer(routes);
     var websoc = io(server);

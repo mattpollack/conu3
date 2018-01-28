@@ -1,0 +1,10 @@
+#chart_div{
+	width: auto;
+	display: inline-block;
+	padding: calc(50% - 400px);
+	margin: auto;
+}
+#home{
+	float: right;
+	padding: 20px;
+}

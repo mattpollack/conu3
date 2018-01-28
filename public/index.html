@@ -1,54 +1,71 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-    <script type='text/javascript'>
-      google.charts.load('current', {'packages':['annotationchart']});
-      google.charts.setOnLoadCallback(drawChart);
+<head>
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div id="ContainerOne">
+		<div id="logoHolder">
+			<img src="./images/ProReaderLogo.png" alt="Loggo header">
+			<button id="analyze" type="button" onclick="location.href='analytics.html'">Analyze</button>
+		</div>
+		<div id ="Center">
+			
+		<form onsubmit="return myFunction">
+			<textarea placeholder ="Paste your paragraphs here"></textarea><br/>
+			<button type="button">Add to Chrome It's Free</button>
+		</form>
+		</div>
+</div>
+<div id="ContainerSix">
+		<div id="old">
+			<img src="./images/old.png" alt="old">
+			<div id = "title4"> Elderly</div>
+			<div id = "text4">Research has show that rapid serial visual repersentation can help Seniors stay sharp longer and help impove there overall emocinal well being </div>
+		</div>
+		<div id="adult">
+			<img src="./images/Kid.png" alt="kid">
+			<div id = "title5">Kids</div>
+			<div id = "text5">Perfect for kids with learning imparments such as dyselxia as research has show to help kids with reading and improve overall slef confidence</div>
+		</div>
+		<div id="kid">
+			<img src="./images/Adult.png" alt="adult">
+			<div id = "title6">Adults</div>
+			<div id = "text6">Fun for all those who can never seem to find a min to read between school and family, get the most out of yout free time</div>
+		</div>
+	</div>
+	<div id="ContainerTwo"></div>
+	<div id="ContainerThree">
+		<div id="ContainerTitle">
+			<div id = "title">Don’t Let Your Reading Speed Hold You Back</div>
+			<div id = "text">If you’re like most people, you have a lot of books you want to read, training you need to complete, and news you need to “stay on top of”. 
+In today’s society, we’re confronted with information overload. There are so many things we wish we could read and remember. At Spreeder, we’ve worked with the world’s leading experts to make reading faster, easier, and more enjoyable. With ProReader you can take control of information overload, save time, and be more productive in life.</div>
+		</div>
+		<div id="factholder">
+			<div id ="fact1">
+				<img src="./images/Alarm.png" alt="Alarm">
+				<div id = "title1">Save Time</div>
+				<div id = "text1">with all the new found free time you will have you wont want to do anything other then read anothere book with proreader</div>
+			</div>
+			<div id ="fact2">
+				<img src="./images/Hour Glass.png" alt="Hour Glass">
+				<div id = "title2">Be Productive</div>
+				<div id = "text2">Get more done to help make time for the important things in life like family anf friends.</div>
+			</div>
+			<div id ="fact3">
+				<img src="./images/LightBulb.png" alt="Loggo header">
+				<div id = "title3">Be Enlightened</div>
+				<div id = "text3">Learn at breakneak speeds and impress your friends with your new found knowlage.</div>
+			</div>
+		</div>
+	
+</div>
+	<div id="ContainerFour"></div>
+	<div id="ContainerFive"></div>
+	
 
-      function drawChart() {
-        var data = new google.visualization.DataTable();
-        var stats = Cookies.getJSON('stats');//obtain cookies containing dates and words per minute via JSON
-        var array = [];
-        data.addColumn('date', 'Date');
-        data.addColumn('number','Words Minute');
 
-        
-
-        for(var i=0; i<stats.length; i++){//loop through JSON Objs to format date and decimal(wmp)
-         var date = Object.keys(stats[i])[0];
-         var holder =date.split(',');
-         array.push([new Date(holder[0],holder[1],holder[2],holder[3],holder[4],holder[5]), stats[i][date]]);
-        }
-
-        data.addRows(array);
-
-        var chart = new google.visualization.AnnotationChart(document.getElementById('chart_div'));
-
-        var options = {
-          displayAnnotations: true,
-          displayRangeSelector:false,
-          width: 800,
-          colors: ['#003459', '00A8E8']
-        };
-
-        chart.draw(data, options);
-      }
-    </script>
-  </head>
-
-  <body>
-      <div class="chart"> 
-
-        <div id="home">
-          <button onclick="myFunction()">Home</button>
-        </div>
-        <div id='chart_div'></div>
-
-      <div id='chart_div'></div>
-      
-  </body>
+</body>
 </html>

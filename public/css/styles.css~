@@ -1,0 +1,198 @@
+
+body{
+
+  margin: 0px;
+  padding: 0px; 
+
+}
+#ContainerOne img {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#logoHolder{
+	width 100%;
+	height: relative;
+}
+
+
+#ContainerOne {
+    /* The image used */
+	background: url(../images/background.png) no-repeat 100% 100%;
+    background-size: cover;
+    background-position: center;
+
+    height: 680px;
+}
+
+#analyze{
+width: 100px;
+height: 30px;
+border-radius: 15px;
+background-color: #00A8E8;
+color: white;
+font-size: 12px;
+margin-top: 20px;
+float: right;
+margin-right: 20px;
+}
+
+#ContainerTwo{
+	margin: 0px;
+	padding: 0px;
+
+	width: 100%;
+	height: 60px;
+	background-color: #003459;
+	
+	float: left;
+
+}
+
+#Center{
+margin-left: calc(50% - 250px);
+margin-top: 130px;
+
+}
+
+#Center button{
+width: 300px;
+height: 50px;
+border-radius: 25px;
+background-color: #00A8E8;
+color: white;
+font-size: 18px;
+margin-top: 30px;
+margin-left: 100px;
+
+}
+
+#Center textarea {
+	width: 500px;
+	height: 200px;
+	outline: none;
+	border: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 26px;
+	box-shadow: 0 0 50px #999;
+}
+
+#ContainerThree{
+	margin: 0px;
+	padding-bottom: 50px;
+	width: 100%;
+	float: left;
+}
+#ContainerFour{
+	margin: 0px;
+	padding-bottom: 50px;
+	width: 100%;
+	float: left;
+	background-color: #007EA7; 
+}
+
+#ContainerTitle{
+	width: 100%;
+	height: relative;
+}
+#title{
+	margin-top: 50px;
+	width: 100%;
+	height: relative;
+	font-size: 42px;
+	font-color: #007EA7;
+	color: #003459;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+
+}
+#text{
+	padding-top: 50px;
+	width: calc(100%-100px);
+	height: relative;
+	font-size: 20px;
+	font-color: #007EA7;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	margin-left: 50px;
+	margin-right: 50px;
+	color: #007EA7;
+
+}
+
+#fact1,#fact2,#fact3{
+	margin-top: 50px;
+	float: left;
+	text-align: center;
+	height: 300px;
+	width: 32%;
+	margin-left: 1%;
+}
+
+#title1,#title2,#title3{
+	width: 100%;
+	height: 50px;
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	font-color: #007EA7;
+	color: #003549;
+	display:inline-block;
+
+
+}
+#text1,#text2,#text3{
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	margin-top: 20px;
+	font-size: 20px;
+	font-color: #007EA7;
+	color: #007EA7;
+	display:inline-block;
+
+
+}
+#ContainerFive{
+width: 100%;
+height:755px;
+}
+#ContainerSix{
+width: 100%;
+height: 500px;
+background-color:#007EA7 ;
+}
+
+
+
+
+
+#old,#adult,#kid{
+	margin-top: 50px;
+	float: left;
+	text-align: center;
+	height: 300px;
+	width: 32%;
+	margin-left: 1%;
+}
+
+#title4,#title5,#title6{
+	width: 100%;
+	height: 50px;
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	font-color: #007EA7;
+	color: #003549;
+	display:inline-block;
+
+}
+#text4,#text5,#text6{
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	margin-top: 20px;
+	font-size: 20px;
+	font-color: #007EA7;
+	color: white;
+	display:inline-block;
+
+
+}
+
+

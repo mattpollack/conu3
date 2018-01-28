@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background: url(../images/Background.png) no-repeat 100% 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+#chart_div text {
+    font-size: 15px;
+}
+#chart_div {
+}
+#home {
+    float: right;
+    padding: 20px;
+}
+#chart_container h1 {
+    
+}
+#chart_container {
+    display: inline-block;
+    margin-left: calc(50% - 400px);
+    margin-top: 340px;
+    text-align: center;
+}

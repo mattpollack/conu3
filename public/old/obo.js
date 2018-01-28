@@ -163,6 +163,8 @@
 	    el.style.display = "none";
 	};
 
+	$.speed = pref.speed;
+
 	$.read = (src) => {
 	    state.src = [];
 	    state.i = 0;
